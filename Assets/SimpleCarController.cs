@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class SimpleCarController : NetworkBehaviour
 {
@@ -105,16 +106,60 @@ public class SimpleCarController : NetworkBehaviour
         visualWheel.transform.rotation = rotation;
     }
 
+    //private void Awake()
+    void Start()
+    {
+        if (!isLocalPlayer)
+            return;
+
+        CustomButton driveButton = GameObject.Find("DriveButton").GetComponent<CustomButton>();
+        driveButton.onCustomButton += OnDriveClicked;
+
+        CustomButton reverseButton = GameObject.Find("ReverseButton").GetComponent<CustomButton>();
+        reverseButton.onCustomButton += OnReverseClicked;
+
+        CustomButton rightButton = GameObject.Find("RightButton").GetComponent<CustomButton>();
+        rightButton.onCustomButton += OnRightClicked;
+
+        CustomButton leftButton = GameObject.Find("LeftButton").GetComponent<CustomButton>();
+        leftButton.onCustomButton += OnLeftClicked;
+    }
+
+
+    public void OnDriveClicked(bool value)
+    {
+        float motor = value ? maxMotorTorque : 0.0f;
+        CmdChangeMotorTorque(motor);
+    }
+
+    public void OnReverseClicked(bool value)
+    {
+        float motor = value ? -maxMotorTorque : 0.0f;
+        CmdChangeMotorTorque(motor);
+    }
+
+    public void OnRightClicked(bool value)
+    {
+        float steering = value ? maxSteeringAngle : 0.0f;
+        CmdChangeWheelsSteering(steering);
+    }
+
+    public void OnLeftClicked(bool value)
+    {
+        float steering = value ? -maxSteeringAngle : 0.0f;
+        CmdChangeWheelsSteering(steering);
+    }
+
     public void FixedUpdate()
     {
         if (!isLocalPlayer)
             return;
 
-        float motor = maxMotorTorque * Input.GetAxis("Vertical");
+        /*float motor = maxMotorTorque * Input.GetAxis("Vertical");
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
 
         CmdChangeMotorTorque(motor);
-        CmdChangeWheelsSteering(steering);
+        CmdChangeWheelsSteering(steering);*/
 
         /*foreach (AxleInfo axleInfo in axleInfos)
         {
