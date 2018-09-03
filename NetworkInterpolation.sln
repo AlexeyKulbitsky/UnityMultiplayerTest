@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{9CA59496-603D-D33E-E62B-F5B4354BEA17}") = "NetworkInterpolation", "Assembly-CSharp.csproj", "{5ABC5452-0934-29A9-989A-BB97570F78FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ABC5452-0934-29A9-989A-BB97570F78FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABC5452-0934-29A9-989A-BB97570F78FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABC5452-0934-29A9-989A-BB97570F78FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABC5452-0934-29A9-989A-BB97570F78FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

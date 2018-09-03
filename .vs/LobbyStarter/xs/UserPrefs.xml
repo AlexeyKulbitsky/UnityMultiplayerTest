@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{75996467-20F8-D0F7-A846-DEF2AB2D5EE7}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Lobby/Scripts/Lobby/LobbyManager.cs">
+    <Files>
+      <File FileName="Assets/CameraFollow360.cs" Line="13" Column="1" />
+      <File FileName="Assets/MyPlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/SetupLocalPlayer.cs" Line="117" Column="4" />
+      <File FileName="Assets/Lobby/Scripts/DraggablePanel.cs" Line="1" Column="1" />
+      <File FileName="Assets/NetworkLobbyHook.cs" Line="11" Column="54" />
+      <File FileName="Assets/Lobby/Scripts/Lobby/LobbyPlayer.cs" Line="317" Column="1" />
+      <File FileName="Assets/SimpleCarController.cs" Line="49" Column="24" />
+      <File FileName="Assets/Lobby/Scripts/Lobby/LobbyManager.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
